@@ -1,0 +1,139 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO Search Permalink\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 01:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.1.1"
+
+#: inc/setting.php:17
+msgid "Permalink Setting"
+msgstr ""
+
+#: inc/setting.php:18
+msgid "You has updated the <strong>search permalink</strong> successfully"
+msgstr ""
+
+#: inc/setting.php:19
+#, php-format
+msgid ""
+"You have to go %s page and click on \"Save Changes\" button to take effect."
+msgstr ""
+
+#. Name of the plugin
+#: inc/setting.php:145
+msgid "SEO Search Permalink"
+msgstr ""
+
+#: inc/setting.php:176
+msgid "Permalink Settings"
+msgstr ""
+
+#: inc/setting.php:183
+msgid "Search Base"
+msgstr ""
+
+#: inc/setting.php:187
+#, php-format
+msgid ""
+"After you have activated this plugin, the search permalink will be changed "
+"from %1$s to %2$s."
+msgstr ""
+
+#: inc/setting.php:188
+msgid ""
+"If you want yo change the search base, please fill in the field with the new "
+"one. Keeping this field blank will apply the default."
+msgstr ""
+
+#: inc/setting.php:192 inc/setting.php:317
+msgid "Save Changes"
+msgstr ""
+
+#: inc/setting.php:204
+msgid "General Settings"
+msgstr ""
+
+#: inc/setting.php:211
+msgid "Letter type"
+msgstr ""
+
+#: inc/setting.php:214
+msgid "No change (default)"
+msgstr ""
+
+#: inc/setting.php:215
+msgid "Lowercase letters"
+msgstr ""
+
+#: inc/setting.php:223
+msgid "Separation symbol"
+msgstr ""
+
+#: inc/setting.php:232 inc/setting.php:240 inc/setting.php:248
+#: inc/setting.php:256 inc/setting.php:293
+msgid "e.g."
+msgstr ""
+
+#: inc/setting.php:266
+msgid ""
+"<b>Note</b>: It is not recommended to use \"backward slash\" if you need "
+"pagination in search result page. It will cause the pagination not working."
+msgstr ""
+
+#: inc/setting.php:275
+msgid "Unwanted special character filtering"
+msgstr ""
+
+#: inc/setting.php:289
+msgid "Accept all characters."
+msgstr ""
+
+#: inc/setting.php:292
+msgid "Remove all special characters."
+msgstr ""
+
+#: inc/setting.php:304
+msgid "Bad words filtering"
+msgstr ""
+
+#: inc/setting.php:307
+msgid ""
+"Enter the words you want to remove from search, separate them with a comma. "
+"( e.g.: keyword_1,keyword_2,keyword_3 )"
+msgstr ""
+
+#: inc/setting.php:308
+msgid ""
+"For example, an user submit a search term \"Taiwan is a keyword_1 beautiful "
+"country\" that includes \"keyword_1\", after filtering, the search term will "
+"be \"Taiwan is a beautiful country\"."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Change default search URLs to the SEO friendly URLs. It may improve your "
+"SERP to boost your site traffic. The default URL ?s=keyword will be changed "
+"to /search/keyword, and you could change the {search base} for your needs."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/terrylinooo/seo-search-permalink"
+msgstr ""
+
+#. Author of the plugin
+msgid "Terry Lin"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://terryl.in/"
+msgstr ""

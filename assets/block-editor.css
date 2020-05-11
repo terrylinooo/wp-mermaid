@@ -1,0 +1,27 @@
+/**
+ * WP Mermaid - Gutenberg Block.
+ *
+ * @author Terry Lin
+ * @link https://terryl.in/
+ * @since 1.0.0
+ * @version 1.0.0
+ */
+
+.wp-block-mermaid-block-editor {
+	border: 1px solid #e2e4e7;
+	border-radius: 4px;
+	padding: .8em 1em;
+}
+
+.wp-block-mermaid-block-editor .mermaid-editor .editor-plain-text {
+	font-family: Menlo, Consolas, monaco, monospace;
+}
+
+.wp-block-mermaid-block-editor .mermaid-editor {
+	display: none;
+}
+
+.is-selected .wp-block-mermaid-block-editor .mermaid-editor,
+.is-typing .wp-block-mermaid-block-editor .mermaid-editor {
+	display: block;
+}

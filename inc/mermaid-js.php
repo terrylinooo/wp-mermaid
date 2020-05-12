@@ -20,8 +20,11 @@ add_action( 'wp_print_footer_scripts', 'wp_mermaid_print_footer_scripts' );
  * @return void
  */
 function wp_mermaid_admin_enqueue_scripts() {
-    global $is_mermaid_loaded;
-    $is_mermaid_loaded = true;
+    global $load_mermaid_js;
+
+    // We want to load mermaid.js for previewing the graph in block editor.
+    $load_mermaid_js = true;
+
     wp_mermaid_enqueue_scripts();
 }
 
@@ -33,9 +36,9 @@ function wp_mermaid_admin_enqueue_scripts() {
  * @return void
  */
 function wp_mermaid_enqueue_scripts() {
-    global $is_mermaid_loaded;
+    global $load_mermaid_js;
 
-    if ( $is_mermaid_loaded ) {
+    if ( $load_mermaid_js ) {
 
         $option = get_option( 'wp_mermaid_js_source' );
 
@@ -65,19 +68,28 @@ function wp_mermaid_enqueue_scripts() {
  * @return void
  */
 function wp_mermaid_print_footer_scripts() {
-    global $is_mermaid_loaded;
+    global $load_mermaid_js;
 
-    if ( $is_mermaid_loaded ) {
+    if ( $load_mermaid_js ) {
 
         $script = '
             <script id="wp-mermaid">
                 (function($) {
                     $(function() {
                         if (typeof mermaid !== "undefined") {
-                            if ($(".mermaid").length > 0) {
-                                $(".mermaid").parent("div").attr("style", "text-align: center; background: none;");
-                                mermaid.init();
-                            }
+							let block_count = $(".mermaid").length;
+							let i = 0;
+                            if (block_count > 0) {
+								$(".mermaid").each(function() {
+									let mermaid_content = $(this).html();
+									mermaid_content.replace(/<[^>]*>?/gm, "");
+									$(this).html(mermaid_content);
+									i++;
+								});
+							}
+							if (block_count == i) {
+								mermaid.init();
+							}
                         }
                     });
                 })(jQuery);

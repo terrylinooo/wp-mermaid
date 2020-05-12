@@ -7,88 +7,89 @@
  * @version 1.0.0
  */
 
-(function(wpBlocks) {
-	const { registerBlockType } = wpBlocks;
+( function( blocks ) {
 
-	registerBlockType("mermaid/display-block", {
-		title: "Mermaid",
+    blocks.registerBlockType( 'wp-mermaid/block', {
+
+		title: 'Mermaid',
+	
 		icon: 'chart-pie',
-		category: "formatting",
+	
+		category: 'formatting',
+
 		attributes: {
 			content: {
-				type: "string",
-				source: "html",
-				selector: "div"
+				type: 'string',
+				source: 'text',
+				selector: 'div'
 			}
 		},
-		edit({ className, attributes, setAttributes }) {
-			const content = attributes.content;
 
-			function onChangeContent(content) {
-				setAttributes({ content });
-			}
+		edit: function( props ) {
 
+			let content = props.attributes.content;
 			let rendered;
-			try {
-				rendered = '<div class="mermaid">' + content + '</div>';
 
-				mermaid.init();
-			} catch (e) {
+			function onChangeContent( content ) {
+				props.setAttributes( { content } );
+
+				setTimeout( function() {
+					mermaid.init();
+				}, 1000 );
+			}
+			
+			try {
+				rendered = '<div class="mermaid">' + "\n" + content + "\n"  + '</div>';
+				
+			} catch ( e ) {
 				rendered = `<span style='color: red; text-align: center;'>${e}</span>`;
 			}
 
 			return wp.element.createElement(
-				"div",
-				{ className: "wp-block-mermaid-block-editor" },
+				'div',
+				{
+					className: 'wp-block-mermaid-block-editor'
+				},
 				[
-					wp.element.createElement("div", { className: "mermaid-editor" }, [
-						wp.element.createElement(wp.editor.PlainText, {
-							onChange: onChangeContent,
-							value: content
-						}),
-						wp.element.createElement("hr")
-					]),
-					wp.element.createElement("div", {
-						className,
-						dangerouslySetInnerHTML: {
-							__html: rendered
-						}
-					})
+					wp.element.createElement(
+						'div',
+						{
+							className: 'mermaid-editor'
+						}, 
+						[
+							wp.element.createElement(
+								wp.editor.PlainText, 
+								{
+									onChange: onChangeContent,
+									value: content
+								} 
+							),
+							wp.element.createElement( 'hr' )
+						] 
+					),
+					wp.element.createElement(
+						'div',
+						{
+							className: props.className,
+							dangerouslySetInnerHTML: {  __html: rendered }
+						} 
+					)
 				]
 			);
 		},
-		save({ attributes }) {
-			const content = attributes.content;
+
+		save: function( props ) {
+			let content = props.attributes.content;
 
 			return wp.element.createElement(
-				"div",
+				'div',
 				{
-					className: "mermaid"
+					className: 'mermaid'
 				},
-				content
+				"\n" + content + "\n"
 			);
-		},
-		deprecated: [
-			{
-				attributes: {
-					content: {
-						type: "string",
-						source: "html",
-						selector: "div"
-					}
-				},
-				save({ attributes }) {
-					const content = attributes.content;
-
-					return wp.element.createElement(
-						"div",
-						{
-							className: "mermaid"
-						},
-						content
-					);
-				}
-			}
-		]
-	});
-})(wp.blocks);
+        }
+    } );
+} )(
+	window.wp.blocks
+);

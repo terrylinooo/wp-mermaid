@@ -42,12 +42,12 @@ if ( ! defined( 'WPINC' ) ) {
  * CONSTANTS
  *
  * MERMAID_PLUGIN_NAME          : Plugin's name.
- * MERMAID_PLUGIN_DIR           : The absolute path of the MERMAID plugin directory.
- * MERMAID_PLUGIN_URL           : The URL of the MERMAID plugin directory.
- * MERMAID_PLUGIN_PATH          : The absolute path of the MERMAID plugin launcher.
+ * MERMAID_PLUGIN_DIR           : The absolute path of the wp-mermaid plugin directory.
+ * MERMAID_PLUGIN_URL           : The URL of the wp-mermaid plugin directory.
+ * MERMAID_PLUGIN_PATH          : The absolute path of the wp-mermaid plugin launcher.
  * MERMAID_PLUGIN_LANGUAGE_PACK : Translation Language pack.
- * MERMAID_PLUGIN_VERSION       : MERMAID plugin version number
- * MERMAID_PLUGIN_TEXT_DOMAIN   : MERMAID plugin text domain
+ * MERMAID_PLUGIN_VERSION       : wp-mermaid plugin version number
+ * MERMAID_PLUGIN_TEXT_DOMAIN   : wp-mermaidplugin text domain
  *
  * Expected values:
  *
@@ -68,24 +68,26 @@ define( 'MERMAID_JS_VERSION', '8.5.0' );
 
 // Support WordPress version 4.7 and below.
 if ( ! function_exists( 'wp_doing_ajax' ) ) {
-    function wp_doing_ajax() {
-        return false;
-    }
+	function wp_doing_ajax() {
+		return false;
+	}
 }
 
 if ( ! wp_doing_ajax() ) {
 
-    load_plugin_textdomain( 'wp-mermaid', false, basename( dirname( __FILE__ ) ) . '/languages' ); 
+	load_plugin_textdomain( 'wp-mermaid', false, basename( dirname( __FILE__ ) ) . '/languages' ); 
 
-    if ( is_admin() ) {
-        require_once plugin_dir_path( __FILE__ ) . 'inc/admin/register.php';
-        require_once plugin_dir_path( __FILE__ ) . 'inc/admin/setting.php';
-        require_once plugin_dir_path( __FILE__ ) . 'inc/admin/menu.php';
-    }
+	if ( is_admin() ) {
+		require_once plugin_dir_path( __FILE__ ) . 'inc/admin/register.php';
+		require_once plugin_dir_path( __FILE__ ) . 'inc/admin/setting.php';
+		require_once plugin_dir_path( __FILE__ ) . 'inc/admin/menu.php';
+	}
 
-    $load_mermaid_js = false;
+	// This is a global variable we use to identify where we want to use mermaid.js
+	$load_mermaid_js = false;
 
-    require_once plugin_dir_path( __FILE__ ) . 'inc/block.php';
-    require_once plugin_dir_path( __FILE__ ) . 'inc/shortcode.php';
-    require_once plugin_dir_path( __FILE__ ) . 'inc/mermaid-js.php';
+	require_once plugin_dir_path( __FILE__ ) . 'inc/block.php';
+	require_once plugin_dir_path( __FILE__ ) . 'inc/shortcode.php';
+	require_once plugin_dir_path( __FILE__ ) . 'inc/smart-loader.php';
+	require_once plugin_dir_path( __FILE__ ) . 'inc/mermaid-js.php';
 }

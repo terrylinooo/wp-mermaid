@@ -13,6 +13,7 @@ add_action('init', 'mermaid_block_init');
 /**
  * Initial block.
  *
+ * @since 1.0.0
  * @return void
  */
 function mermaid_block_init() {
@@ -24,13 +25,13 @@ function mermaid_block_init() {
 
     wp_register_script(
         'mermaid-gutenberg-block',
-        plugins_url( 'assets/block-editor.js', dirname( __FILE__ ) ),
+        plugins_url( 'assets/mermaid/block-editor.js', dirname( __FILE__ ) ),
         array( 'wp-blocks', 'wp-element' )
     );
 
     wp_register_style(
         'mermaid-gutenberg-block',
-        plugins_url( 'assets/block-editor.css', dirname( __FILE__ ) ),
+        plugins_url( 'assets/mermaid/block-editor.css', dirname( __FILE__ ) ),
         array( 'wp-edit-blocks' )
     );
 
@@ -46,6 +47,7 @@ function mermaid_block_init() {
  *
  * @param array $attr
  * @param string $content
+ * @since 1.0.0
  * @return string
  */
 function mermaid_display_block_render( $attr, $content = null ) {

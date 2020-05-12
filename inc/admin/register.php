@@ -14,6 +14,7 @@ register_uninstall_hook( __FILE__, 'wp_mermaid_uninstall' );
 /**
  * Assign default setting values while activating this plugin.
  * 
+ * @since 1.0.0
  * @return void
  */
 function wp_mermaid_activation() {
@@ -24,6 +25,7 @@ function wp_mermaid_activation() {
 /**
  * Remove setting values while uninstalling this plugin.
  *
+ * @since 1.0.0
  * @return void
  */
 function wp_mermaid_uninstall() {

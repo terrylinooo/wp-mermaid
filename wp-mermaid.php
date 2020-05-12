@@ -5,7 +5,7 @@
  * @author Terry Lin
  * @link https://terryl.in/
  *
- * @package MERMAID
+ * @package wp-mermaid
  * @since 1.0.0
  * @version 1.0.0
  */

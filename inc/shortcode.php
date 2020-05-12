@@ -13,6 +13,7 @@ add_action( 'init', 'wp_mermaid_shortcode_init' );
 /**
  * Initial `mermaid` short code.
  *
+ * @since 1.0.0
  * @return void
  */
 function wp_mermaid_shortcode_init() {
@@ -22,9 +23,9 @@ function wp_mermaid_shortcode_init() {
 /**
  * Render the shortcode.
  *
- * @param array $attr
+ * @param array  $attr
  * @param string $content
- *
+ * @since 1.0.0
  * @return string
  */
 function wp_mermaid_shortcode( $attr, $content = null ) {
@@ -39,7 +40,7 @@ function wp_mermaid_shortcode( $attr, $content = null ) {
     );
 
     $content = htmlspecialchars( html_entity_decode( $content ) );
-    $result  = sprintf( '<div class="mermaid-eq">%s</div>', $content );
+    $result  = sprintf( '<div class="mermaid">%s</div>', $content );
 
     return $result;
 }

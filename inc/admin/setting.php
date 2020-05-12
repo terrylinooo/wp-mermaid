@@ -12,7 +12,8 @@ add_action( 'admin_init', 'wp_mermaid_settings' );
 
  /**
   * Add settings.
-  *
+  * 
+  * @since 1.0.0
   * @return void
   */
 function wp_mermaid_settings() {
@@ -42,6 +43,7 @@ function wp_mermaid_setting_section_callback() {
 /**
  * Setting block - The source of Javascript files will be used from.
  *
+ * @since 1.0.0
  * @return void
  */
 function wp_mermaid_js_source_callback() {

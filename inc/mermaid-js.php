@@ -14,7 +14,9 @@ add_action( 'wp_print_footer_scripts', 'wp_mermaid_print_footer_scripts' );
 
 /**
  * Register JS files for backend use.
+ * This method will be called by `admin_enqueue_scripts` hook.
  *
+ * @since 1.0.0
  * @return void
  */
 function wp_mermaid_admin_enqueue_scripts() {
@@ -25,7 +27,9 @@ function wp_mermaid_admin_enqueue_scripts() {
 
 /**
  * Register JS files for frontend use.
+ * This method will be called by `wp_enqueue_scripts` hook.
  * 
+ * @since 1.0.0
  * @return void
  */
 function wp_mermaid_enqueue_scripts() {
@@ -55,6 +59,10 @@ function wp_mermaid_enqueue_scripts() {
 
 /**
  * Print JavasSript plaintext in page footer.
+ * This method will be called by `wp_print_footer_scripts` hook.
+ * 
+ * @since 1.0.0
+ * @return void
  */
 function wp_mermaid_print_footer_scripts() {
     global $is_mermaid_loaded;

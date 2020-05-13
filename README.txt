@@ -1,6 +1,6 @@
 === WP Mermaid ===
 Contributors: Terry Lin
-Tags: markdown, flowchat, sequence, diagram
+Tags: markdown, flowchat, sequence, diagram, mermaid
 Requires at least: 4.0
 Tested up to: 5.4.1
 Stable tag: 1.0.0
@@ -10,7 +10,7 @@ License URI: https://www.gnu.org/licenses/gpl.html
 
 == Description ==
 
-Generation of diagrams and flowcharts from text in a similar manner as markdown by using mermaid.js
+Generation of diagrams and flowcharts from text in a similar manner as markdown by using [mermaid.js](https://mermaid-js.github.io/)
 
 == Installation ==
 
@@ -24,6 +24,24 @@ None.
 
 == Screenshots ==
 
+1. Choose a Mermaid syntax block.
+2. Fill in your Mermaid syntax, then see the preview. 
+
+
+== Copyright ==
+
+WP Mermaid, Copyright 2020 TerryL.in
+WP Mermaid is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
 == Changelog ==
 

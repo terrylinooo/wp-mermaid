@@ -12,7 +12,7 @@
 
 /**
  * Plugin Name: WP Mermaid
- * Plugin URI:  https://github.com/terrylinooo/wp-dermaid
+ * Plugin URI:  https://github.com/terrylinooo/wp-mermaid
  * Description: Generation of diagrams and flowcharts from text in a similar manner as markdown by using mermaid.js
  * Version:     1.0.0
  * Author:      Terry Lin
@@ -85,9 +85,6 @@ if ( ! wp_doing_ajax() ) {
 
 	// This is a global variable we use to identify where we want to use mermaid.js
 	$load_mermaid_js  = false;
-
-	// Define a key for post metadata for loading mermaid.js
-	$post_metadata_id = '_wp_mermaid';
 
 	require_once plugin_dir_path( __FILE__ ) . 'inc/block.php';
 	require_once plugin_dir_path( __FILE__ ) . 'inc/shortcode.php';

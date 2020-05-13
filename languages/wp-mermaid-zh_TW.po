@@ -1,109 +1,108 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: SEO Search Permalink\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-13 05:21+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: 2020-05-13 05:57+0000\n"
+"Last-Translator: Terry Lin <contact@terryl.in>\n"
+"Language-Team: Chinese (Taiwan)\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.2.0; wp-5.1.1"
+"X-Loco-Version: 2.3.1; wp-5.4.1"
 
 #. Name of the plugin
 #: inc/admin/menu.php:22 inc/admin/menu.php:23
 msgid "WP Mermaid"
-msgstr ""
+msgstr "WP Mermaid"
 
 #: inc/admin/menu.php:56
 msgid "How to Use"
-msgstr ""
+msgstr "使用指南"
 
 #: inc/admin/menu.php:58
 msgid "Shortcode"
-msgstr ""
+msgstr "短代碼"
 
 #: inc/admin/menu.php:61
 msgid "In classic editor, you can use shortcode to render your Mermaid syntax."
-msgstr ""
+msgstr "在傳統編輯器中，您可以使用短代碼來轉譯您的 Mermaid 語法。"
 
 #: inc/admin/menu.php:62
 msgid ""
 "If you are using WordPress version below 5.0, this is the only way you can "
 "use."
-msgstr ""
+msgstr "如果您正使用的 WordPress 版本在 5.0  以下，您只能使用這個方式。"
 
 #: inc/admin/menu.php:68
 msgid "Gutenberg Block"
-msgstr ""
+msgstr "Gutenberg 區塊"
 
 #: inc/admin/menu.php:70
 msgid "Choose Mermaid block:"
-msgstr ""
+msgstr "選擇一個 Mermaid 區塊："
 
 #: inc/admin/menu.php:72
 msgid "Fill in your Mermaid syntax in the editor."
-msgstr ""
+msgstr "填入您的 Mermaid 語法在編輯器中。"
 
 #: inc/admin/setting.php:24
 msgid "Basic"
-msgstr ""
+msgstr "基本設定"
 
 #: inc/admin/setting.php:31
 msgid "File Host"
-msgstr ""
+msgstr "檔案代管"
 
 #: inc/admin/setting.php:39
 msgid "Uninstall Option"
-msgstr ""
+msgstr "移除選項"
 
 #: inc/admin/setting.php:63
 msgid "default"
-msgstr ""
+msgstr "預設值"
 
 #: inc/admin/setting.php:70
 msgid "cdn.cloudflare.com"
-msgstr ""
+msgstr "cdn.cloudflare.com"
 
 #: inc/admin/setting.php:78
 msgid "cdn.jsdelivr.net"
-msgstr ""
+msgstr "cdn.jsdelivr.net"
 
 #: inc/admin/setting.php:83
 msgid "Use this library with a CDN service or self-hosted (default)?"
-msgstr ""
+msgstr "設定使用託管於 CDN 服務或自主託管 (預設值) 的函式庫。"
 
 #: inc/admin/setting.php:101
 msgid "Remove WP-Mermaid generated data."
-msgstr ""
+msgstr "移除 WP-Mermaid 產生的資料。"
 
 #: inc/admin/setting.php:108
 msgid "Keep WP-Mermaid generated data."
-msgstr ""
+msgstr "保持 WP-Mermaid 產生的資料。"
 
 #: inc/admin/setting.php:112
 msgid "This option only works when you uninstall this plugin."
-msgstr ""
+msgstr "這個選項只在您移除此外掛時作用。"
 
 #. Description of the plugin
 msgid ""
 "Generation of diagrams and flowcharts from text in a similar manner as "
 "markdown by using mermaid.js"
-msgstr ""
+msgstr "通過使用 mermaid.js 以類似 markdown 語法的方式，從文字生成圖表和流程圖。"
 
 #. URI of the plugin
 msgid "https://github.com/terrylinooo/wp-mermaid"
-msgstr ""
+msgstr "https://github.com/terrylinooo/wp-mermaid"
 
 #. Author of the plugin
 msgid "Terry Lin"
-msgstr ""
+msgstr "Terry Lin"
 
 #. Author URI of the plugin
 msgid "https://terryl.in/"
-msgstr ""
+msgstr "https://terryl.in/"

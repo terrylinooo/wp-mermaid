@@ -8,7 +8,7 @@
  * @version 1.0.0
  */
 
-add_action( 'wp_enqueue_scripts', 'wp_mermaid_enqueue_scripts' );
+add_action( 'loop_end', 'wp_mermaid_enqueue_scripts', 20 );
 add_action( 'admin_enqueue_scripts', 'wp_mermaid_admin_enqueue_scripts' );
 add_action( 'wp_print_footer_scripts', 'wp_mermaid_print_footer_scripts' );
 

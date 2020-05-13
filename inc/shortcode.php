@@ -25,7 +25,6 @@ function wp_mermaid_shortcode_init() {
  *
  * @param array  $attr
  * @param string $content
- * @since 1.0.0
  * @return string
  */
 function wp_mermaid_shortcode( $attr, $content = null ) {
@@ -39,8 +38,10 @@ function wp_mermaid_shortcode( $attr, $content = null ) {
 		'mermaid'
 	);
 
-	$content = htmlspecialchars( html_entity_decode( $content ) );
-	$result  = sprintf( '<div class="mermaid">%s</div>', $content );
+	$content = html_entity_decode( $content );
+	$content = str_replace( '<br />', "\n", $content );
+	$content = str_replace( array( '<p>', '</p>' ), '', $content );
+	$result  = sprintf( "<div class=\"mermaid\">\n%s\n</div>", $content );
 
 	return $result;
 }

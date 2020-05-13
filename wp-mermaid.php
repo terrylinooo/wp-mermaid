@@ -84,7 +84,10 @@ if ( ! wp_doing_ajax() ) {
 	}
 
 	// This is a global variable we use to identify where we want to use mermaid.js
-	$load_mermaid_js = false;
+	$load_mermaid_js  = false;
+
+	// Define a key for post metadata for loading mermaid.js
+	$post_metadata_id = '_wp_mermaid';
 
 	require_once plugin_dir_path( __FILE__ ) . 'inc/block.php';
 	require_once plugin_dir_path( __FILE__ ) . 'inc/shortcode.php';

@@ -12,8 +12,7 @@ add_action( 'admin_menu', 'wp_mermaid_option' );
 
 /**
  * Register the plugin setting page.
- * 
- * @since 1.0.0
+ *
  * @return void
  */
 function wp_mermaid_option() {
@@ -32,7 +31,6 @@ function wp_mermaid_option() {
 /**
  * Output the setting page.
  *
- * @since 1.0.0
  * @return void
  */
 function wp_mermaid_options_page() {

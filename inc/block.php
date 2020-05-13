@@ -13,7 +13,6 @@ add_action('init', 'mermaid_block_init');
 /**
  * Initial block.
  *
- * @since 1.0.0
  * @return void
  */
 function mermaid_block_init() {
@@ -47,7 +46,6 @@ function mermaid_block_init() {
  *
  * @param array $attr
  * @param string $content
- * @since 1.0.0
  * @return string
  */
 function mermaid_display_block_render( $attr, $content = null ) {

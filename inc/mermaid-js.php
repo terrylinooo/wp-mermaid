@@ -16,7 +16,6 @@ add_action( 'wp_print_footer_scripts', 'wp_mermaid_print_footer_scripts' );
  * Register JS files for backend use.
  * This method will be called by `admin_enqueue_scripts` hook.
  *
- * @since 1.0.0
  * @return void
  */
 function wp_mermaid_admin_enqueue_scripts() {
@@ -31,8 +30,7 @@ function wp_mermaid_admin_enqueue_scripts() {
 /**
  * Register JS files for frontend use.
  * This method will be called by `wp_enqueue_scripts` hook.
- * 
- * @since 1.0.0
+ *
  * @return void
  */
 function wp_mermaid_enqueue_scripts() {
@@ -63,8 +61,7 @@ function wp_mermaid_enqueue_scripts() {
 /**
  * Print JavasSript plaintext in page footer.
  * This method will be called by `wp_print_footer_scripts` hook.
- * 
- * @since 1.0.0
+ *
  * @return void
  */
 function wp_mermaid_print_footer_scripts() {
@@ -73,26 +70,30 @@ function wp_mermaid_print_footer_scripts() {
     if ( $load_mermaid_js ) {
 
         $script = '
-            <script id="wp-mermaid">
-                (function($) {
-                    $(function() {
-                        if (typeof mermaid !== "undefined") {
-							let block_count = $(".mermaid").length;
+			<script id="wp-mermaid">
+
+                ( function( $ ) {
+                    $( function() {
+                        if ( typeof mermaid !== "undefined" ) {
+							let block_count = $( ".mermaid" ).length;
 							let i = 0;
-                            if (block_count > 0) {
-								$(".mermaid").each(function() {
-									let mermaid_content = $(this).html();
-									mermaid_content.replace(/<[^>]*>?/gm, "");
-									$(this).html(mermaid_content);
+
+                            if ( block_count > 0 ) {
+								$( ".mermaid" ).each( function() {
+									let mermaid_content = $( this ).html();
+									mermaid_content.replace( /<[^>]*>?/gm, "" );
+									$( this ).html( mermaid_content );
 									i++;
 								});
 							}
-							if (block_count == i) {
+
+							if ( block_count === i ) {
 								mermaid.init();
 							}
                         }
-                    });
-                })(jQuery);
+                    } );
+				} )( jQuery );
+
             </script>
         ';
         echo preg_replace( '/\s+/', ' ', $script );

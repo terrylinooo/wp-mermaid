@@ -17,7 +17,6 @@ register_uninstall_hook( __FILE__, 'wp_mermaid_uninstall' );
  * @return void
  */
 function wp_mermaid_activation() {
-	add_option( 'wp_mermaid_js_source', 'default' );
 	add_option( 'wp_mermaid_uninstall_option', 'yes' );
 }
 
@@ -30,7 +29,6 @@ function wp_mermaid_uninstall() {
 	$option_uninstall = get_option( 'wp_mermaid_uninstall_option' );
 
 	if ( 'yes' === $option_uninstall ) {
-		delete_option( 'wp_mermaid_js_source' );
 		delete_option( 'wp_mermaid_uninstall_option' );
 	}
 }

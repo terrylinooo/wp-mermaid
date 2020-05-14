@@ -38,22 +38,8 @@ function wp_mermaid_enqueue_scripts() {
 
     if ( $load_mermaid_js ) {
 
-        $option = get_option( 'wp_mermaid_js_source' );
-
-        switch ( $option ) {
-            case 'cloudflare':
-                $script_url = 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/' . MERMAID_JS_VERSION . '/mermaid.min.js';
-                break;
-    
-            case 'jsdelivr':
-                $script_url = 'https://cdn.jsdelivr.net/npm/mermaid@' . MERMAID_JS_VERSION . '/dist/mermaid.min.js';
-                break;
-    
-            default:
-                $script_url = MERMAID_PLUGIN_URL . 'assets/mermaid/mermaid.min.js';
-                break;
-        } 
-
+        $script_url = MERMAID_PLUGIN_URL . 'assets/mermaid/mermaid.min.js';
+      
         wp_enqueue_script( 'mermaid', $script_url, array(), MERMAID_JS_VERSION, true );
     }
 }

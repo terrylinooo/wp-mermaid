@@ -10,7 +10,7 @@ Generation of diagrams and flowcharts from text in a similar manner as markdown 
 
 ## How to use
 
-WP Mermaid is smart enough that only load mermaid.js when your posts contain Mermaid syntax, by detecting the use of shortcode and block. So it will not be loaded on your website everywhere.
+WP Mermaid is smart enough that loads mermaid.js only when your posts contain Mermaid syntax, by detecting the use of shortcode and block. So it will not be loaded on your website everywhere.
 
 ### Shortcode
 

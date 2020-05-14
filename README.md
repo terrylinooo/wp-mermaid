@@ -33,9 +33,9 @@ sequenceDiagram
 [/mermaid]
 ```
 
-### Gutenburg Block
+### Gutenberg Block
 
-Choose Mermaid block:
+Choose a Mermaid block:
 
 ![](assets/example-gutenberg-block-1.png)
 

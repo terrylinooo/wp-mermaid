@@ -9,7 +9,7 @@
 
 ( function( blocks ) {
 
-    blocks.registerBlockType( 'mermaid/block', {
+    blocks.registerBlockType( 'wp-mermaid/block', {
 
 		title: 'WP Mermaid',
 	

@@ -34,7 +34,7 @@ function mermaid_block_init() {
         array( 'wp-edit-blocks' )
     );
 
-    register_block_type( 'mermaid/display-block', array(
+    register_block_type( 'wp-mermaid/display-block', array(
         'editor_script'   => 'mermaid-gutenberg-block',
         'editor_style'    => 'mermaid-gutenberg-block',
         'render_callback' => 'mermaid_display_block_render',

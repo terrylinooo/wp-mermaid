@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEO Search Permalink\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-13 05:21+0000\n"
+"POT-Creation-Date: 2020-05-15 02:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -38,55 +38,61 @@ msgid ""
 "use."
 msgstr ""
 
-#: inc/admin/menu.php:68
+#: inc/admin/menu.php:66
 msgid "Gutenberg Block"
 msgstr ""
 
-#: inc/admin/menu.php:70
+#: inc/admin/menu.php:68
 msgid "Choose Mermaid block:"
 msgstr ""
 
-#: inc/admin/menu.php:72
+#: inc/admin/menu.php:70
 msgid "Fill in your Mermaid syntax in the editor."
 msgstr ""
 
-#: inc/admin/setting.php:24
+#: inc/admin/setting.php:25
 msgid "Basic"
 msgstr ""
 
-#: inc/admin/setting.php:31
+#: inc/admin/setting.php:32
 msgid "File Host"
 msgstr ""
 
-#: inc/admin/setting.php:39
+#: inc/admin/setting.php:40
 msgid "Uninstall Option"
+msgstr ""
+
+#: inc/admin/setting.php:63
+msgid "Local"
 msgstr ""
 
 #: inc/admin/setting.php:63
 msgid "default"
 msgstr ""
 
-#: inc/admin/setting.php:70
+#: inc/admin/setting.php:69
 msgid "cdn.cloudflare.com"
 msgstr ""
 
-#: inc/admin/setting.php:78
+#: inc/admin/setting.php:76
 msgid "cdn.jsdelivr.net"
 msgstr ""
 
-#: inc/admin/setting.php:83
-msgid "Use this library with a CDN service or self-hosted (default)?"
+#: inc/admin/setting.php:80
+msgid ""
+"This plugin loads mermaid.js locally by default, but if you would like to "
+"use it with a CDN service, here is the option."
 msgstr ""
 
-#: inc/admin/setting.php:101
+#: inc/admin/setting.php:98
 msgid "Remove WP-Mermaid generated data."
 msgstr ""
 
-#: inc/admin/setting.php:108
+#: inc/admin/setting.php:105
 msgid "Keep WP-Mermaid generated data."
 msgstr ""
 
-#: inc/admin/setting.php:112
+#: inc/admin/setting.php:109
 msgid "This option only works when you uninstall this plugin."
 msgstr ""
 

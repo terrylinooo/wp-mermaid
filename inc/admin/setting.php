@@ -54,32 +54,28 @@ function wp_mermaid_setting_section_callback() {
  * @return void
  */
 function wp_mermaid_js_source_callback() {
-	$option_js_source = get_option( 'wp_mermaid_js_source', 'default' );
+	$option_js_source = get_option( 'wp_mermaid_js_source', 'local' );
 	?>
 		<div>
 			<div>
-				<input type="radio" name="wp_mermaid_js_source" id="wp-mermaid-js-library-source-default" value="default" 
-					<?php checked( $option_js_source, 'local' ); ?>>
-				<label for="wp-mermaid-js-library-source-default">
+				<input type="radio" name="wp_mermaid_js_source" id="wp-mermaid-js-library-source-1" value="local" <?php checked( $option_js_source, 'local' ); ?>>
+				<label for="wp-mermaid-js-library-source-1">
 				<?php echo __( 'Local', 'wp-mermaid' ); ?> (<?php echo __( 'default', 'wp-mermaid' ); ?>)
 				<label>
 			</div>
 			<div>
-				<input type="radio" name="wp_mermaid_js_source" id="wp-mermaid-js-library-source-default" value="cloudflare" 
-					<?php checked( $option_js_source, 'cloudflare' ); ?>>
-				<label for="wp-mermaid-js-library-source-default">
+				<input type="radio" name="wp_mermaid_js_source" id="wp-mermaid-js-library-source-1" value="cloudflare" <?php checked( $option_js_source, 'cloudflare' ); ?>>
+				<label for="wp-mermaid-js-library-source-2">
 					<?php echo __( 'cdn.cloudflare.com', 'wp-mermaid' ); ?>
 				<label>
 			
 			</div>
 			<div>
-				<input type="radio" name="wp_mermaid_js_source" id="wp-mermaid-js-library-source-default" 
-					<?php checked( $option_js_source, 'jsdelivr' ); ?> value="jsdelivr">
-				<label for="wp-mermaid-js-library-source-default">
+				<input type="radio" name="wp_mermaid_js_source" id="wp-mermaid-js-library-source-2" <?php checked( $option_js_source, 'jsdelivr' ); ?> value="jsdelivr">
+				<label for="wp-mermaid-js-library-source-3">
 					<?php echo __( 'cdn.jsdelivr.net', 'wp-mermaid' ); ?>
 				<label>
 			</div>
-			
 		</div>
 		<p><em><?php echo __( 'This plugin loads mermaid.js locally by default, but if you would like to use it with a CDN service, here is the option.', 'wp-mermaid' ); ?></em></p>
 	<?php

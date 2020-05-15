@@ -61,8 +61,6 @@ function wp_mermaid_options_page() {
 					<?php echo __( 'In classic editor, you can use shortcode to render your Mermaid syntax.', 'wp-mermaid' ); ?><br />
 					<?php echo __( 'If you are using WordPress version below 5.0, this is the only way you can use.', 'wp-mermaid' ); ?>
 				</p>
-
-				
 				<code style="background-color: white; padding: 10px; margin: 10px 0; display: inline-block;">[mermaid] ... [/mermaid]</code>
 			</blockquote>
 			<h4><?php echo __( 'Gutenberg Block', 'wp-mermaid' ); ?></h4>

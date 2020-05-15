@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEO Search Permalink\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-13 05:21+0000\n"
-"PO-Revision-Date: 2020-05-13 06:10+0000\n"
+"POT-Creation-Date: 2020-05-15 02:59+0000\n"
+"PO-Revision-Date: 2020-05-15 03:05+0000\n"
 "Last-Translator: Terry Lin <contact@terryl.in>\n"
 "Language-Team: Chinese (China)\n"
 "Language: zh_CN\n"
@@ -37,55 +37,61 @@ msgid ""
 "use."
 msgstr "如果您正使用的 WordPress 版本在 5.0 以下，您只能使用这个方式。"
 
-#: inc/admin/menu.php:68
+#: inc/admin/menu.php:66
 msgid "Gutenberg Block"
 msgstr "Gutenberg 区块"
 
-#: inc/admin/menu.php:70
+#: inc/admin/menu.php:68
 msgid "Choose Mermaid block:"
 msgstr "选择一个 Mermaid 区块："
 
-#: inc/admin/menu.php:72
+#: inc/admin/menu.php:70
 msgid "Fill in your Mermaid syntax in the editor."
 msgstr "填入您的 Mermaid 语法在编辑器中。"
 
-#: inc/admin/setting.php:24
+#: inc/admin/setting.php:25
 msgid "Basic"
 msgstr "基本设定"
 
-#: inc/admin/setting.php:31
+#: inc/admin/setting.php:32
 msgid "File Host"
 msgstr "档案代管"
 
-#: inc/admin/setting.php:39
+#: inc/admin/setting.php:40
 msgid "Uninstall Option"
 msgstr "移除选项"
+
+#: inc/admin/setting.php:63
+msgid "Local"
+msgstr "本地端"
 
 #: inc/admin/setting.php:63
 msgid "default"
 msgstr "预设值"
 
-#: inc/admin/setting.php:70
+#: inc/admin/setting.php:69
 msgid "cdn.cloudflare.com"
 msgstr "cdn.cloudflare.com"
 
-#: inc/admin/setting.php:78
+#: inc/admin/setting.php:76
 msgid "cdn.jsdelivr.net"
 msgstr "cdn.jsdelivr.net"
 
-#: inc/admin/setting.php:83
-msgid "Use this library with a CDN service or self-hosted (default)?"
-msgstr "设定使用托管于 CDN 服务或自主托管 (预设值) 的函式库。"
+#: inc/admin/setting.php:80
+msgid ""
+"This plugin loads mermaid.js locally by default, but if you would like to "
+"use it with a CDN service, here is the option."
+msgstr "此外挂预设本地式地载入 mermaid.js，但如果您想以 CDN 服务来使用它，选项在这里。"
 
-#: inc/admin/setting.php:101
+#: inc/admin/setting.php:98
 msgid "Remove WP-Mermaid generated data."
 msgstr "移除 WP-Mermaid 产生的资料。"
 
-#: inc/admin/setting.php:108
+#: inc/admin/setting.php:105
 msgid "Keep WP-Mermaid generated data."
 msgstr "保持 WP-Mermaid 产生的资料。"
 
-#: inc/admin/setting.php:112
+#: inc/admin/setting.php:109
 msgid "This option only works when you uninstall this plugin."
 msgstr "这个选项只在您移除此外挂时作用。"
 

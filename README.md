@@ -2,6 +2,14 @@
 
 Generation of diagrams and flowcharts from text in a similar manner as markdown by using [mermaid.js](https://mermaid-js.github.io/)
 
+## Download
+
+| source | download | 
+| --- | --- | 
+| WordPress | https://wordpress.org/plugins/wp-mermaid |
+| GitHub repository | https://github.com/terrylinooo/wp-mermaid/releases | 
+| PHP Composer | `composer create-project terrylinooo/wp-mermaid wp-mermaid` |
+
 ## Installation
 
 1. Upload the plugin files to the `/wp-content/plugins/wp-mermaid` directory, or install the plugin through the WordPress plugins screen directly.

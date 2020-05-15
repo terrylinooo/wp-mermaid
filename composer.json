@@ -1,0 +1,14 @@
+{
+    "name": "terrylinooo/wp-mermaid",
+    "description": "Render your Mermaid syntax on WordPress.",
+    "keywords": ["wordpress-plugin", "diagram", "flowchart", "mermaid"],
+    "homepage": "https://github.com/terrylinooo/wp-mermaid",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Terry Lin",
+            "email": "contact@terryl.in",
+            "homepage": "https://terryl.in/zh/"
+        }
+    ]
+}

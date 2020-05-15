@@ -9,9 +9,9 @@
 
 ( function( blocks ) {
 
-    blocks.registerBlockType( 'wp-mermaid/block', {
+    blocks.registerBlockType( 'mermaid/block', {
 
-		title: 'Mermaid',
+		title: 'WP Mermaid',
 	
 		icon: 'chart-pie',
 	

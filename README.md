@@ -43,11 +43,10 @@ Fill in your Mermaid syntax in the editor.
 
 ![](assets/example-gutenberg-block-2.png)
 
-
-### Author
-
-[Terry Lin](https://terryl.in)
-
 ### License
 
-GPLv3
+WP Mermaid is developed by [Terry Lin](https://terryl.in) and released under the terms of the GNU General Public License v3.
+
+### Also See
+
+If you are looking for a [Markdown editor](https://wordpress.org/plugins/wp-githuber-md/) supporting Mermaid, you can also check out my another WordPress plugin called the [WP Githuber MD](https://github.com/terrylinooo/githuber-md), which provides a variety of features not just Mermaid, it is worth to try.

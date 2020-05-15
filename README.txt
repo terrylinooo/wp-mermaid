@@ -18,6 +18,35 @@ Generation of diagrams and flowcharts from text in a similar manner as markdown 
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Go to the WP Mermaid menu in Settings and set your options.
 
+== How to use ==
+
+WP Mermaid is smart enough that loads mermaid.js only when your posts contain Mermaid syntax, by detecting the use of shortcode and block. So it will not be loaded on your website everywhere.
+
+= Shortcode =
+
+In classic editor, you can use shortcode to render your Mermaid syntax. If you are using WordPress version below 5.0, this is the only way you can use.
+
+```
+[mermaid]
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+[/mermaid]
+```
+
+= Gutenberg Block =
+
+1. Choose a Mermaid syntax block.
+2. Fill in your Mermaid syntax in the editor.
+
 == Frequently Asked Questions ==
 
 None.
@@ -25,8 +54,12 @@ None.
 == Screenshots ==
 
 1. Choose a Mermaid syntax block.
-2. Fill in your Mermaid syntax, then see the preview. 
+2. Fill in your Mermaid syntax in the editor.
 
+
+### Also See
+
+If you are looking for a [Markdown editor](https://github.com/terrylinooo/githuber-md) supporting Mermaid, you can also check out [Terry Lin](https://terryl.in)'s WordPress plugin called the [WP Githuber MD](https://wordpress.org/plugins/wp-githuber-md/), which provides a variety of features not just Mermaid, it is worth to try.
 
 == Copyright ==
 
@@ -48,6 +81,5 @@ GNU General Public License for more details.
 = 1.0.0 =
 
 - First release.
-
 
 == Upgrade Notice ==

@@ -2,7 +2,7 @@
 Contributors: Terry Lin
 Tags: markdown, flowchat, sequence, diagram, mermaid
 Requires at least: 4.0
-Tested up to: 5.4.1
+Tested up to: 5.6.1
 Stable tag: 1.0.0
 Requires PHP: 5.3.0
 License: GPLv3 or later

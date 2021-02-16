@@ -1,5 +1,5 @@
 === WP Mermaid ===
-Contributors: Terry Lin
+Contributors: terrylin
 Tags: markdown, flowchat, sequence, diagram, mermaid
 Requires at least: 4.0
 Tested up to: 5.6.1

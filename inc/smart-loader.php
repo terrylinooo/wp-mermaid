@@ -8,7 +8,7 @@
  * @version 1.0.0
  */
 
-add_action( 'loop_end', 'wp_mermaid_js_smart_loader', 10 );
+add_action( 'the_post', 'wp_mermaid_js_smart_loader', 10 );
 
 // We need to remove `wptexturize` to make the Mermaid syntax work as expected,
 // becuase the HTML encoded characters break the syntax.
@@ -23,7 +23,7 @@ remove_filter( 'the_content', 'wptexturize' );
 function wp_mermaid_js_smart_loader() {
     global $load_mermaid_js;
 
-    if ( is_mermaid_loaded_on_post() ) {
+    if ( $load_mermaid_js || is_mermaid_loaded_on_post() ) {
         $load_mermaid_js = true; 
     }
 }

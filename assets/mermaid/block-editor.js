@@ -90,6 +90,10 @@
 			);
         }
     } );
+
+	window.setTimeout( () => {
+		mermaid.init();
+	}, 1000);
 } )(
 	window.wp.blocks
 );

@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Mermaid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-15 02:59+0000\n"
+"PO-Revision-Date: 2023-05-23 11:25+0000\n"
+"Last-Translator: Jimmy K. <support@colocal.com>\n"
+"Language-Team: Japanese (Japan)\n"
+"Language: ja_JP\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.4.1"
+
+#: inc/admin/setting.php:25
+msgid "Basic"
+msgstr "基本"
+
+#: inc/admin/setting.php:69
+msgid "cdn.cloudflare.com"
+msgstr "cdn.cloudflare.com"
+
+#: inc/admin/setting.php:76
+msgid "cdn.jsdelivr.net"
+msgstr "cdn.jsdelivr.net"
+
+#: inc/admin/menu.php:68
+msgid "Choose Mermaid block:"
+msgstr "マーメイドブロックを選択："
+
+#: inc/admin/setting.php:63
+msgid "default"
+msgstr "デフォルト"
+
+#: inc/admin/setting.php:32
+msgid "File Host"
+msgstr "ファイルホスト"
+
+#: inc/admin/menu.php:70
+msgid "Fill in your Mermaid syntax in the editor."
+msgstr "エディターにマーメイド構文を入力します。"
+
+#. Description of the plugin
+msgid ""
+"Generation of diagrams and flowcharts from text in a similar manner as "
+"markdown by using mermaid.js"
+msgstr "mermaid.jsを使用して、マークダウンのような方法でテキストから図表やフローチャートを生成します。"
+
+#: inc/admin/menu.php:66
+msgid "Gutenberg Block"
+msgstr "Gutenberg ブロック"
+
+#: inc/admin/menu.php:56
+msgid "How to Use"
+msgstr "使い方"
+
+#. URI of the plugin
+msgid "https://github.com/terrylinooo/wp-mermaid"
+msgstr "https://github.com/terrylinooo/wp-mermaid"
+
+#. Author URI of the plugin
+msgid "https://terryl.in/"
+msgstr "https://terryl.in/"
+
+#: inc/admin/menu.php:62
+msgid ""
+"If you are using WordPress version below 5.0, this is the only way you can "
+"use."
+msgstr "WordPressのバージョンが5.0未満の場合、これが唯一の使用方法です。"
+
+#: inc/admin/menu.php:61
+msgid "In classic editor, you can use shortcode to render your Mermaid syntax."
+msgstr "クラシックエディターでは、ショートコードを使用してMermaidの構文をレンダリングできます。"
+
+#: inc/admin/setting.php:105
+msgid "Keep WP-Mermaid generated data."
+msgstr "WP-Mermaidが生成したデータを保持します。"
+
+#: inc/admin/setting.php:63
+msgid "Local"
+msgstr "ローカル"
+
+#: inc/admin/setting.php:98
+msgid "Remove WP-Mermaid generated data."
+msgstr "WP-Mermaidが生成したデータを削除します。"
+
+#: inc/admin/menu.php:58
+msgid "Shortcode"
+msgstr "ショートコード"
+
+#. Author of the plugin
+msgid "Terry Lin"
+msgstr "Terry Lin"
+
+#: inc/admin/setting.php:109
+msgid "This option only works when you uninstall this plugin."
+msgstr "このオプションは、このプラグインをアンインストールしたときにのみ動作します。"
+
+#: inc/admin/setting.php:80
+msgid ""
+"This plugin loads mermaid.js locally by default, but if you would like to "
+"use it with a CDN service, here is the option."
+msgstr ""
+"このプラグインはデフォルトでローカルにmermaid.jsをロードしますが、CDNサービスで使用したい場合はこちらのオプションをご利用ください。"
+
+#: inc/admin/setting.php:40
+msgid "Uninstall Option"
+msgstr "アンインストールオプション"
+
+#. Name of the plugin
+#: inc/admin/menu.php:22 inc/admin/menu.php:23
+msgid "WP Mermaid"
+msgstr "WP Mermaid"

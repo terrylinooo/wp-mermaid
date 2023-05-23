@@ -7,14 +7,14 @@
  *
  * @package wp-mermaid
  * @since 1.0.0
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 /**
  * Plugin Name: WP Mermaid
  * Plugin URI:  https://github.com/terrylinooo/wp-mermaid
  * Description: Generation of diagrams and flowcharts from text in a similar manner as markdown by using mermaid.js
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      Terry Lin
  * Author URI:  https://terryl.in/
  * License:     GPL 3.0
@@ -62,12 +62,17 @@ define( 'MERMAID_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MERMAID_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'MERMAID_PLUGIN_PATH', __FILE__ );
 define( 'MERMAID_PLUGIN_LANGUAGE_PACK', dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-define( 'MERMAID_PLUGIN_VERSION', '1.0.1' );
+define( 'MERMAID_PLUGIN_VERSION', '1.0.2' );
 define( 'MERMAID_PLUGIN_TEXT_DOMAIN', 'wp-mermaid' );
-define( 'MERMAID_JS_VERSION', '8.9.0' );
+define( 'MERMAID_JS_VERSION', '9.4.3' );
 
 // Support WordPress version 4.7 and below.
 if ( ! function_exists( 'wp_doing_ajax' ) ) {
+	/**
+	 * Create wp_doing_ajax() function for WordPress version 4.7 and below.
+	 *
+	 * @return bool
+	 */
 	function wp_doing_ajax() {
 		return false;
 	}
@@ -75,7 +80,7 @@ if ( ! function_exists( 'wp_doing_ajax' ) ) {
 
 if ( ! wp_doing_ajax() ) {
 
-	load_plugin_textdomain( 'wp-mermaid', false, basename( dirname( __FILE__ ) ) . '/languages' ); 
+	load_plugin_textdomain( 'wp-mermaid', false, basename( dirname( __FILE__ ) ) . '/languages' );
 
 	if ( is_admin() ) {
 		require_once plugin_dir_path( __FILE__ ) . 'inc/admin/register.php';
@@ -84,7 +89,7 @@ if ( ! wp_doing_ajax() ) {
 	}
 
 	// This is a global variable we use to identify where we want to use mermaid.js
-	$load_mermaid_js  = false;
+	$load_mermaid_js = false;
 
 	require_once plugin_dir_path( __FILE__ ) . 'inc/block.php';
 	require_once plugin_dir_path( __FILE__ ) . 'inc/shortcode.php';

@@ -2,15 +2,15 @@
 Contributors: terrylin
 Tags: markdown, flowchat, sequence, diagram, mermaid
 Requires at least: 4.0
-Tested up to: 5.6.1
-Stable tag: 1.0.1
+Tested up to: 6.2.2
+Stable tag: 1.0.2
 Requires PHP: 5.3.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 
 == Description ==
 
-Generation of diagrams and flowcharts from text in a similar manner as markdown by using [mermaid.js](https://mermaid-js.github.io/)
+Generation of diagrams and flowcharts from text in a similar manner as markdown by using [mermaid.js](https://mermaid.js.org/)
 
 WP Mermaid is smart enough that loads mermaid.js only when your posts contain Mermaid syntax, by detecting the use of shortcode and block. So it will not be loaded on your website everywhere.
 
@@ -32,6 +32,11 @@ In classic editor, you can use shortcode to render your Mermaid syntax. If you a
 
 1. Choose a Mermaid syntax block.
 2. Fill in your Mermaid syntax in the editor.
+
+== Translations ==
+
+Chinese (zh_TW) by [Terry L.](https://terryl.in/).
+Japanese (ja_JP) by [Colocal](https://colocal.com/).
 
 == Frequently Asked Questions ==
 
@@ -66,5 +71,11 @@ GNU General Public License for more details.
 = 1.0.1
 
 - Upgrade Mermaid JavaScript library from 8.5.0 to 8.9.0
+
+= 1.0.2
+
+- Test with PHP 8.2.5 and WordPress 6.2.2
+- Upgrade Mermaid JavaScript library from 8.9.0 to 9.4.3
+- Add Japanese translation.
 
 == Upgrade Notice ==

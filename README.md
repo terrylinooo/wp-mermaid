@@ -51,6 +51,23 @@ Fill in your Mermaid syntax in the editor.
 
 ![](assets/example-gutenberg-block-2.png)
 
+### Changelog
+
+1.0.0
+
+- First release.
+
+1.0.1
+
+- Upgrade Mermaid JavaScript library from 8.5.0 to 8.9.0
+
+1.0.2
+
+- Add Japanese (ja_JP) translation, thanks to [Colocal](https://colocal.com/).
+- Test with PHP 8.2.5 and WordPress 6.2.2
+- Upgrade Mermaid JavaScript library from 8.9.0 to 9.4.3
+
+
 ### License
 
 WP Mermaid is developed by [Terry Lin](https://terryl.in) and released under the terms of the GNU General Public License v3.

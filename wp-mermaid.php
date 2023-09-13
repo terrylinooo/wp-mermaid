@@ -7,14 +7,14 @@
  *
  * @package wp-mermaid
  * @since 1.0.0
- * @version 1.0.2
+ * @version 1.0.3
  */
 
 /**
  * Plugin Name: WP Mermaid
  * Plugin URI:  https://github.com/terrylinooo/wp-mermaid
  * Description: Generation of diagrams and flowcharts from text in a similar manner as markdown by using mermaid.js
- * Version:     1.0.2
+ * Version:     1.0.3
  * Author:      Terry Lin
  * Author URI:  https://terryl.in/
  * License:     GPL 3.0
@@ -62,9 +62,9 @@ define( 'MERMAID_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MERMAID_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'MERMAID_PLUGIN_PATH', __FILE__ );
 define( 'MERMAID_PLUGIN_LANGUAGE_PACK', dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-define( 'MERMAID_PLUGIN_VERSION', '1.0.2' );
+define( 'MERMAID_PLUGIN_VERSION', '1.0.3' );
 define( 'MERMAID_PLUGIN_TEXT_DOMAIN', 'wp-mermaid' );
-define( 'MERMAID_JS_VERSION', '9.4.3' );
+define( 'MERMAID_JS_VERSION', '10.4.0' );
 
 // Support WordPress version 4.7 and below.
 if ( ! function_exists( 'wp_doing_ajax' ) ) {

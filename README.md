@@ -67,6 +67,8 @@ Fill in your Mermaid syntax in the editor.
 - Test with PHP 8.2.5 and WordPress 6.2.2
 - Upgrade Mermaid JavaScript library from 8.9.0 to 9.4.3
 
+1.0.3
+- Upgrade Mermaid JavaScript library from 9.4.3 to 1.40.0
 
 ### License
 

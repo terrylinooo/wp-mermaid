@@ -68,7 +68,7 @@ Fill in your Mermaid syntax in the editor.
 - Upgrade Mermaid JavaScript library from 8.9.0 to 9.4.3
 
 1.0.3
-- Upgrade Mermaid JavaScript library from 9.4.3 to 1.40.0
+- Upgrade Mermaid JavaScript library from 9.4.3 to 10.4.0
 
 ### License
 

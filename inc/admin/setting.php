@@ -36,6 +36,14 @@ function wp_mermaid_settings() {
 	);
 
 	add_settings_field(
+		'wp_mermaid_js_version',
+		__( 'Mermaid Version', 'wp-mermaid' ),
+		'wp_mermaid_js_version_callback',
+		'wp_mermaid_setting_group',
+		'wp_mermaid_basic_section_id'
+	);
+
+	add_settings_field(
 		'wp_mermaid_uninstall_option',
 		__( 'Uninstall Option', 'wp-mermaid' ),
 		'wp_mermaid_uninstall_option_callback',
@@ -78,6 +86,23 @@ function wp_mermaid_js_source_callback() {
 			</div>
 		</div>
 		<p><em><?php echo __( 'This plugin loads mermaid.js locally by default, but if you would like to use it with a CDN service, here is the option.', 'wp-mermaid' ); ?></em></p>
+	<?php
+}
+
+
+/**
+ * Setting block - The Mermaid library version to use from CDNs
+ *
+ * @return void
+ */
+function wp_mermaid_js_version_callback() {
+	?>
+		<div>
+			<div>
+				<input type="input" name="wp_mermaid_js_version" id="wp-mermaid-js-library-version" value="<?php get_option( 'wp_mermaid_js_version', MERMAID_JS_VERSION ); ?>" />
+			</div>
+		</div>
+		<p><em><?php echo __( 'Version of the Mermaid library to use from a CDN service. Warning: Correct version of the library is not validated! Use at your own risk.', 'wp-mermaid' ); ?></em></p>
 	<?php
 }
 

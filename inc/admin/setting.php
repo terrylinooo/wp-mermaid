@@ -100,7 +100,7 @@ function wp_mermaid_js_version_callback() {
 	?>
 		<div>
 			<div>
-				<input type="input" name="wp_mermaid_js_version" id="wp-mermaid-js-library-version" value="<?php get_option( 'wp_mermaid_js_version', MERMAID_JS_VERSION ); ?>" />
+				<input type="input" name="wp_mermaid_js_version" id="wp-mermaid-js-library-version" value="<?php echo get_option( 'wp_mermaid_js_version', MERMAID_JS_VERSION ); ?>" />
 			</div>
 		</div>
 		<p><em><?php echo __( 'Version of the Mermaid library to use from a CDN service. Warning: Correct version of the library is not validated! Use at your own risk.', 'wp-mermaid' ); ?></em></p>

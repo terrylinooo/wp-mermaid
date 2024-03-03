@@ -10,10 +10,6 @@
 
 add_action( 'loop_end', 'wp_mermaid_js_smart_loader', 10 );
 
-// We need to remove `wptexturize` to make the Mermaid syntax work as expected,
-// becuase the HTML encoded characters break the syntax.
-remove_filter( 'the_content', 'wptexturize' );
-
 /**
  * Detect whether Mermaid syntax existed in post content.
  *

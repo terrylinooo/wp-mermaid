@@ -39,14 +39,15 @@ function wp_mermaid_enqueue_scripts() {
 	if ( $load_mermaid_js ) {
 
 		$option = get_option( 'wp_mermaid_js_source' );
+		$version = get_option( 'wp_mermaid_js_version' );
 
 		switch ( $option ) {
 			case 'cloudflare':
-				$script_url = 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/' . MERMAID_JS_VERSION . '/mermaid.min.js';
+				$script_url = 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/' . $version . '/mermaid.min.js';
 				break;
 
 			case 'jsdelivr':
-				$script_url = 'https://cdn.jsdelivr.net/npm/mermaid@' . MERMAID_JS_VERSION . '/dist/mermaid.min.js';
+				$script_url = 'https://cdn.jsdelivr.net/npm/mermaid@' . $version . '/dist/mermaid.min.js';
 				break;
 
 			case 'local':

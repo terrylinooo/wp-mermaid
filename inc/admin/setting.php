@@ -18,6 +18,7 @@ add_action( 'admin_init', 'wp_mermaid_settings' );
 function wp_mermaid_settings() {
 
 	register_setting( 'wp_mermaid_setting_group', 'wp_mermaid_js_source' );
+    register_setting( 'wp_mermaid_setting_group', 'wp_mermaid_js_version' );
 	register_setting( 'wp_mermaid_setting_group', 'wp_mermaid_uninstall_option' );
 
 	add_settings_section(
@@ -31,6 +32,14 @@ function wp_mermaid_settings() {
 		'wp_mermaid_js_source',
 		__( 'File Host', 'wp-mermaid' ),
 		'wp_mermaid_js_source_callback',
+		'wp_mermaid_setting_group',
+		'wp_mermaid_basic_section_id'
+	);
+
+	add_settings_field(
+		'wp_mermaid_js_version',
+		__( 'Mermaid Version', 'wp-mermaid' ),
+		'wp_mermaid_js_version_callback',
 		'wp_mermaid_setting_group',
 		'wp_mermaid_basic_section_id'
 	);
@@ -68,7 +77,7 @@ function wp_mermaid_js_source_callback() {
 				<label for="wp-mermaid-js-library-source-2">
 					<?php echo __( 'cdn.cloudflare.com', 'wp-mermaid' ); ?>
 				<label>
-			
+
 			</div>
 			<div>
 				<input type="radio" name="wp_mermaid_js_source" id="wp-mermaid-js-library-source-2" <?php checked( $option_js_source, 'jsdelivr' ); ?> value="jsdelivr">
@@ -83,6 +92,34 @@ function wp_mermaid_js_source_callback() {
 
 
 /**
+ * Setting block - The Mermaid library version to use from CDNs
+ *
+ * @return void
+ */
+function wp_mermaid_js_version_callback()
+{
+    ?>
+    <div>
+        <div>
+            <input type="input" size="6" name="wp_mermaid_js_version" id="wp-mermaid-js-library-version"
+                   value="<?php echo get_option('wp_mermaid_js_version', MERMAID_JS_VERSION); ?>"/>
+        </div>
+    </div>
+    <p><em><?php echo __('Version of the Mermaid library to use from a CDN service.', 'wp-mermaid'); ?></em></p>
+    <p>
+        <em>
+            <b><?php echo __('Warning', 'wp-mermaid'); ?>: </b>
+            <?php echo __('Correct version of the library is not validated! Use at your own risk.', 'wp-mermaid'); ?>
+            <?php echo __('See', 'wp-mermaid'); ?> <a href="https://github.com/mermaid-js/mermaid/tags">
+                <?php echo __('available versions', 'wp-mermaid'); ?>
+            </a>.
+        </em>
+    </p>
+    <?php
+}
+
+
+/**
  * Setting block - The source of Javascript files will be used from.
  *
  * @return void
@@ -92,19 +129,19 @@ function wp_mermaid_uninstall_option_callback() {
 	?>
 		<div>
 			<div>
-				<input type="radio" name="wp_mermaid_uninstall_option" id="wp-mermaid-uninstall-option-yes" value="yes" 
+				<input type="radio" name="wp_mermaid_uninstall_option" id="wp-mermaid-uninstall-option-yes" value="yes"
 					<?php checked( $option_uninstall_option, 'yes' ); ?>>
 				<label for="wp-mermaid-uninstall-option-yes">
 					<?php echo __( 'Remove WP-Mermaid generated data.', 'wp-mermaid' ); ?><br />
 				<label>
 			</div>
 			<div>
-				<input type="radio" name="wp_mermaid_uninstall_option" id="wp-mermaid-uninstall-option-yes" value="no" 
+				<input type="radio" name="wp_mermaid_uninstall_option" id="wp-mermaid-uninstall-option-yes" value="no"
 					<?php checked( $option_uninstall_option, 'no' ); ?>>
 				<label for="wp-mermaid-uninstall-option-yes">
 					<?php echo __( 'Keep WP-Mermaid generated data.', 'wp-mermaid' ); ?>
 				<label>
-			</div>	
+			</div>
 		</div>
 		<p><em><?php echo __( 'This option only works when you uninstall this plugin.', 'wp-mermaid' ); ?></em></p>
 	<?php

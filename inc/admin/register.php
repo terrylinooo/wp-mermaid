@@ -32,7 +32,7 @@ function wp_mermaid_uninstall() {
 
 	if ( 'yes' === $option_uninstall ) {
 		delete_option( 'wp_mermaid_js_source' );
-		delete_option( 'wp_mermaid_js_versionF' );
+		delete_option( 'wp_mermaid_js_version' );
 		delete_option( 'wp_mermaid_uninstall_option' );
 	}
 }

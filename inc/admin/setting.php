@@ -18,6 +18,7 @@ add_action( 'admin_init', 'wp_mermaid_settings' );
 function wp_mermaid_settings() {
 
 	register_setting( 'wp_mermaid_setting_group', 'wp_mermaid_js_source' );
+    register_setting( 'wp_mermaid_setting_group', 'wp_mermaid_js_version' );
 	register_setting( 'wp_mermaid_setting_group', 'wp_mermaid_uninstall_option' );
 
 	add_settings_section(
